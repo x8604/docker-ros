@@ -8,3 +8,7 @@
   - `-t`: tạo 1 terminal ảo để tương tác với container
   - `--rm`: xóa container ngay khi nó dừng hoạt động
 - Chạy container kết nối với X server: `docker run -it --rm -e DISPLAY=host.docker.internal:0 -v /tmp/.X11-unix:/tmp/.X11-unix osrf/ros:noetic-desktop-full bash`
+- Khởi động lại container: `docker start noetic-container`
+- Kết nối vào container: `docker exec -it noetic-container bash`
+- Dừng container: `docker stop noetic-container`
+- Xóa container: `docker rm noetic-container`
